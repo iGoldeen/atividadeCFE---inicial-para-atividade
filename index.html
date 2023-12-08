@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Home - Game Mania</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbarbrand" href="index.html"><img src="img/game mania logo.png" alt="Página Inicial"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">PROMOÇÕES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACESSÓRIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">KIT UPGRADE</a>
+            </li>
+            <!--
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                KIT UPGRADE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">PERIFÉRICOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MONITORES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MAIS</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="nav-right-item">
+              <form class="d-flex" role="search">
+                <input id="barra-pesquisa" class="form-control me-2" type="search" placeholder="Procure seu produto" aria-label="Search">
+                <button id="btn_lupa" class="butao" type="submit" >
+                  <img id="lupa" src="img/ícones nav/lupa.png" alt="lupa">
+                </button>
+              </form>
+              <button id="acesso_conta" class="botao_login">
+                <a href="login.html"><img src="img/ícones nav/conta.png" id="conta" alt="Sacola de Compras"></a>
+              </button>
+              <button id="sacola_compras" class="botao_sacola">
+                <a href="#"><img src="img/ícones nav/sacola.png" id="sacola" alt="Sacola de Compras"></a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--
+    <section id="section-banners" class="container-fluid">
+      <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+
+            <div class="slide_first">
+                <img src="img/capa.jpg" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="img/banner1.PNG" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="img/banner2.PNG" alt="imagem 3">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+      
+
+    </section>  -->
+
+    <!-- Carrossel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#"><img src="img/capa.jpg" class="d-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="img/banner1.PNG" class="d-block w-100" alt="..."></a>
+        </div>
+        <div class="carousel-item">
+          <a href="#"><img src="img/banner2.PNG" class="d-block w-100" alt="..."></a> 
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- blocos roxos -->
+    <div class="blocks">
+      <div class="block1">
+        <img src="img/ícones abaixo carrossel/cupom.png" alt="..." id="cupom">
+          <p>Ganhe 10% off na primeira compra CUPOM: GMANIA10</p>
+      </div>
+      <div class="block2">
+        <img src="img/ícones abaixo carrossel/frete.png" alt="..." id="frete">
+          <p>Frete grátis nas compras acima de R$ 199,00</p>
+      </div>
+      <div class="block3">
+        <img src="img/ícones abaixo carrossel/parcelamento.png" alt="..." id="parcelamento">
+          <p>Parcelamento em até 12x sem juros no cartão</p>
+      </div>
+      <div class="block4">
+        <img src="img/ícones abaixo carrossel/desconto.png" alt="..." id="desconto">
+          <p>Desconto de 5% no PIX</p>
+      </div>
+      <div class="block5">
+        <img src="img/ícones abaixo carrossel/manutenção.png" alt="..." id="manutenção">
+          <p>Montagem do PC gratuita!</p>
+      </div>
+    </div>
+
+    <section id="section-vendidos" class="container-fluid">
+
+      <h2>MAIS VENDIDOS</h2>
+
+        <div class="card-group">
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/placa-de-video-galax-geforce-rtx-3060-1-click-oc-12gb-gddr6-192bit-36nol7md1voc_117465.webp" class="card-img-top" alt="Placa de vídeo NVIDA">
+            <div class="card-body">
+              <h5 class="card-title">Placa De Vídeo Galax NVIDIA GeForce RTX 3060 (1-Click OC), LHR, 12GB, GDDR6, DLSS, Ray Tracing,</h5>
+                <p class="preco">
+                  De: 
+                  <span class="preco-antigo">
+                    R$ 3.039,90
+                  </span>
+                  por: 
+                    <p class="desconto">
+                      R$ 1.949,90
+                      <span class="avista">
+                      à vista
+                      </span>
+                    </p>
+                  12x de R$ 191,17 sem juros
+                </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/ssd-hiksemi-waves-512gb-sata-iii-leitura-530mbs-e-gravacao-450mbs-hs-ssd-waves-512g_178024.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">SSD Hiksemi Wave(S) 512GB, Sata III, Leitura 530MBs E Gravação 450MBs, HS-SSD-WAVE(S) 512G</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 319,00
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 139,00
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 20,44 sem juros
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/processador-intel-core-i3-10100f-360ghz-430ghz-turbo-10-geracao-4-cores-8-threads-lga-1200-s-video-bx8070110100f_124883.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Processador Intel Core i3 10100F 3.60GHz (4.30GHz Turbo), 4-Cores 8-Threads, LGA 1200, S/ Vídeo</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 799,90
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 448,99
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 44,02 sem juros
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/processador-amd-ryzen-5-4500-36ghz-41ghz-turbo-6-cores-12-threads-cooler-wraith-stealth-am4-100-100000644box_141344.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Processador AMD Ryzen 5 4500 3.6GHz (4.1GHz Turbo), 6-Cores 12-Threads, Cooler Wraith Stealth, AM4,</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 1.399,00
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 428,99
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 42,06 sem juros
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/kit-upgrade-asrock-b450m-steel-legend-amd-ryzen-5-5600x_143906.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kit Upgrade ASRock B450M Steel Legend + AMD Ryzen 5 5600x</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 3.409,41
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 1.767,99
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 173,33 sem juros
+              </p>
+            </div>
+          </div>
+
+        </div>
+      <br>
+      <h2>RECOMENDADOS</h2>
+
+        <div class="card-group">
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/cadeira-gamer-superframe-cleric-reclinavel-4d-suporta-ate-140kg-branco-e-preto_153817.png" class="card-img-top" alt="Placa de vídeo NVIDA">
+            <div class="card-body">
+              <h5 class="card-title">Cadeira Gamer SuperFrame Cleric, Reclinável, 4D, Branco E Preto</h5>
+                <p class="preco">
+                  De: 
+                  <span class="preco-antigo">
+                    R$ 1.999,00
+                  </span>
+                  por: 
+                    <p class="desconto">
+                      R$ 749,90
+                      <span class="avista">
+                      à vista
+                      </span>
+                    </p>
+                  12x de R$ 73,43 sem juros
+                </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/mouse-gamer-corsair-katar-elite-wireless-26000-dpi-6-botoes-rgb-black-ch-931c111-na_175793.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mouse Gamer Corsair Katar Elite Wireless, 26,000 DPI, 6 Botões, RGB, Black, CH-931C111-NA</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 799,00
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 399,00
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 39,12 sem juros
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/memoria-ddr4-geil-orion-32gb-4x8gb-3000mhz-red-gaor48gb3000c16asc-x-4_122416.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Memória DDR4 Geil Orion, 32GB (4x8GB) 3000MHz, Red</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 842,36
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 635,99
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 62,35 sem juros
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/fonte-gamdias-kratos-e1-500w-add-rgb-80-plus-gd-z500zzz_139052.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fonte Gamdias, Kratos E1, 500W, 80% De Eficiência, RGB</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 399,00
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 199,00
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                11x de R$ 21,28 sem juros
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/Produtos/monitor-gamer-duex-24-pol-full-hd-ips-144hz-1ms-hdmidp-dx-240zg_174894.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Monitor Gamer Duex, 24 Pol, Full HD, IPS, 144Hz, 1ms, HDMI/DP</h5>
+              <p class="preco">
+                  De: 
+                <span class="preco-antigo">
+                  R$ 1.119,90
+                </span>
+                  por: 
+              </p>
+              <p class="desconto">
+                R$ 699,00
+                <span class="avista">
+                  à vista
+                </span>
+              </p>
+              <p class="parcela">
+                12x de R$ 68,62 sem juros
+              </p>
+            </div>
+          </div>
+
+        </div>
+  </div>
+    </section>
+  <div class="block6">
+    <img src="img/foto gamemania.jpg" alt="Game Mania" id="foto_gamemania">
+    <img src="img/game mania logo.png" alt="Game Mania" id="logo_gamemania">
+    <p id="texto_apresentacao">
+      A Game Mania nasceu em 2022, com sua primeira loja em
+      Leblon, no Rio de Janeiro. Sendo atualmente uma das
+      principais empresas de tecnologia gamer do país, com
+      computadores, acessórios, placas de mãe, placas de
+      vídeo, periféricos, processadores, cadeiras gamer e etc.
+      Voltada ao público apaixonado por jogos e performance,
+      oferece a seus clientes produtos de alta qualidade, de
+      marcas reconhecidas como Asus, Razer, Corsair, Intel,
+      AMD, entre outras. Oferece também a montagem de PCs
+      personalizados em determinadas unidades.
+    </p>
+    <input type="button" value="CONHEÇA MAIS" class="button_saibamais" id="btn_saiba" onclick="saibaMais()">
+  </div>
+  </main>
+<section class="top_marcas">
+  <h2>TOP MARCAS</h2>
+
+  <div class="card-group">
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/hyperx-logo.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/corsair-logo.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/redragon.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/intel-logo.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/amd-logo.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/nvidia-logo.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;" id="marca">
+      <img src="img/Marcas/asus.png" class="card-img-top" alt="HyperX">
+      <div class="card-body">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <div id="footer_content">
+      <div class="footer-section" id="footer_contacts">
+        <ul class="footer-list">
+          <li>
+            <h6>FALE CONOSCO</h6>
+          </li>
+          <li>
+            <p>Loja online: contato@gamemania.com</p>
+          </li>
+          <li>
+            <p >Telefone: +55 (86) 9 1234-5678</p>
+          </li>
+          <li>
+            <p >Horário de atendimento: Seg-Sex: 08:00 às 18:00</p>
+          </li>
+          <li>
+            <p>Sáb: 08:00 às 12:00</p> 
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section" id="footer_contacts">
+        <ul class="footer-list">
+          <li>
+            <h6>DÚVIDAS</h6>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Como comprar</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Prazos e entregas</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Programas de Parceiros</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Manuseio do Produto</a> 
+          </li>
+          <li>
+            <a href="#" class="footer-link">Vídeo tutoriais</a> 
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section" id="footer_contacts">
+        <ul class="footer-list" id="INSTITUCIONAL">
+          <li>
+            <h6>INSTITUCIONAL</h6>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Quem somos</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Termos e Condições de Venda</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Política de Troca e Devoluções</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Política de Segurança e Privacidade</a> 
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-section" id="footer_contacts">
+        <H6 id="secury">SIGA-NOS NAS REDES SOCIAIS</H6>
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/olucinex/" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/lucihnd/" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCT4lbgoK756R0vt9UXroWag" class="footer-link" id="youtube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/luciano-junior-b2aa6321b/" class="footer-link" id="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+        </div>
+        <h6 id="secury">SEGURANÇA</h6>
+          <img src="img/rodapé/selo.png">
+        <h6 id="secury">FORMAS DE PAGAMENTO</h6>
+          <img src="img/rodapé/pagamento.webp">
+      </div>
+    </div>
+    <div id="footer_copyright">
+      &#169
+      2023 all rights reserved
+    </div>
+  </footer>
+
+  <button id="voltar-topo" type="button" class="btn btn-outline-secondary" onclick="topo()">&uarr;</button>
+
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="js/script.js"></script>
+
+  </body>
+
+
+</html>
